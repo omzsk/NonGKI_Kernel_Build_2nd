@@ -12,8 +12,8 @@ env:
   CUSTOM_CMDS: "CLANG_TRIPLE=aarch64-linux-gnu- --eval='export CLANG_FLAGS'"
   EXTRA_CMDS: "LD_LIBRARY_PATH=$GITHUB_WORKSPACE/clang-custom/lib64"
 
-  KERNEL_SOURCE: "https://github.com/LineageOS/android_kernel_google_msm-4.9"
-  KERNEL_BRANCH: "cf7420326fc9659917177acb536a2a9a8bf65bfc"
+  KERNEL_SOURCE: "https://github.com/ozsx/android_kernel_google_msm-4.9"
+  KERNEL_BRANCH: "dev-2025"
 
   CLANG_SOURCE: "https://github.com/LineageOS/android_prebuilts_clang_kernel_linux-x86_clang-r416183b.git"
   CLANG_BRANCH: "lineage-20.0"
