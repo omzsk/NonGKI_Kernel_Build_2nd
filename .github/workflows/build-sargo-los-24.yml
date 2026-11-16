@@ -1,4 +1,4 @@
-name: Build Google Pixel 3a (LineageOS 24.0 A17)
+name: Build Google Pixel 3a (OZSX 22.2 A15)
 
 on:
   workflow_call:
@@ -12,8 +12,8 @@ env:
   CUSTOM_CMDS: "CLANG_TRIPLE=aarch64-linux-gnu- --eval='export CLANG_FLAGS'"
   EXTRA_CMDS: "LD_LIBRARY_PATH=$GITHUB_WORKSPACE/clang-custom/lib64"
 
-  KERNEL_SOURCE: "https://github.com/xbill9/android_kernel_google_msm-4.9.git"
-  KERNEL_BRANCH: "lineage-24.0-sargo-20261113-1707"
+  KERNEL_SOURCE: "https://github.com/LineageOS/android_kernel_google_msm-4.9"
+  KERNEL_BRANCH: "cf7420326fc9659917177acb536a2a9a8bf65bfc"
 
   CLANG_SOURCE: "https://github.com/LineageOS/android_prebuilts_clang_kernel_linux-x86_clang-r416183b.git"
   CLANG_BRANCH: "lineage-20.0"
@@ -46,7 +46,7 @@ env:
   NEED_DTBO : false
   NEED_SAFE_DTBO : false
 
-  ROM_TEXT: "lineage-24.0-sargo-20261113-1707"
+  ROM_TEXT: "ozsx-sargo-20261113-1707"
 
   # Other env
   PYTHON_VERSION: "3" # Only 2(Ubuntu 22.04 and Ubuntu 20.04) or 3(Any OS Versions).
